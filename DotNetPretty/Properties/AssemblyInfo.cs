@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("DotNetPretty")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Lots of \"stuff\" to make it easier to work with .net applications")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Gordon Beeming")]
 [assembly: AssemblyProduct("DotNetPretty")]

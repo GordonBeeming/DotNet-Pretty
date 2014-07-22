@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RootFiles", "RootFiles", "{
 		readme.md = readme.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPretty.DesktopTestApp", "DotNetPretty.DesktopTestApp\DotNetPretty.DesktopTestApp.csproj", "{71EEF3DA-6A12-414A-9CF0-682E6FCAD1D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{9808D792-7131-48D4-A4A6-0EC3C2D115F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9808D792-7131-48D4-A4A6-0EC3C2D115F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9808D792-7131-48D4-A4A6-0EC3C2D115F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71EEF3DA-6A12-414A-9CF0-682E6FCAD1D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71EEF3DA-6A12-414A-9CF0-682E6FCAD1D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71EEF3DA-6A12-414A-9CF0-682E6FCAD1D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71EEF3DA-6A12-414A-9CF0-682E6FCAD1D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

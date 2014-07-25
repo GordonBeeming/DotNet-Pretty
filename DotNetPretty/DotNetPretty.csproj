@@ -30,20 +30,66 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.TeamFoundation.Client, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.TeamFoundation.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.TeamFoundation.WorkItemTracking.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Controls, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.TeamFoundation.WorkItemTracking.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.ControlsCore, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.TeamFoundation.WorkItemTracking.ControlsCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.VisualStudio.DebuggerVisualizers.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Visualizers\DebuggerDisplay\SqlConnectionDebuggerDisplay.cs" />
+    <Compile Include="Framework\Forms.cs" />
+    <Compile Include="Visualizers\SQL\DebuggerDisplay\SqlConnectionDebuggerDisplay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visualizers\TFS\DebuggerDisplay\WorkItemTypeDebuggerDisplay.cs" />
+    <Compile Include="Visualizers\TFS\DebuggerDisplay\WorkItemDebuggerDisplay.cs" />
+    <Compile Include="Visualizers\TFS\DebuggerVisualizer\DialogDebuggerVisualizers\WorkItemVisualizer.cs" />
+    <Compile Include="Visualizers\TFS\DebuggerVisualizer\Surrogates\WorkItemSurrogate.cs" />
+    <Compile Include="Visualizers\TFS\DebuggerVisualizer\VisualizerObjectSources\WorkItemVisualizerObjectSource.cs" />
+    <Compile Include="Visualizers\TFS\DebuggerVisualizer\Windows\WorkItemWindow.xaml.cs">
+      <DependentUpon>WorkItemWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizers\TFS\DebuggerVisualizer\WorkItemDebuggerVisualizer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Visualizers\DebuggerVisualizer\" />
+    <Folder Include="Visualizers\SQL\DebuggerVisualizer\" />
+    <Folder Include="Visualizers\TFS\DebuggerVisualizer\Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Visualizers\TFS\DebuggerVisualizer\Windows\WorkItemWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

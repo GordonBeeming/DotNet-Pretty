@@ -29,23 +29,35 @@
         private void InitializeComponent()
         {
             this.btnSystemDataSqlClientSqlConnection = new System.Windows.Forms.Button();
+            this.btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSystemDataSqlClientSqlConnection
             // 
             this.btnSystemDataSqlClientSqlConnection.Location = new System.Drawing.Point(12, 12);
             this.btnSystemDataSqlClientSqlConnection.Name = "btnSystemDataSqlClientSqlConnection";
-            this.btnSystemDataSqlClientSqlConnection.Size = new System.Drawing.Size(267, 23);
+            this.btnSystemDataSqlClientSqlConnection.Size = new System.Drawing.Size(333, 23);
             this.btnSystemDataSqlClientSqlConnection.TabIndex = 0;
             this.btnSystemDataSqlClientSqlConnection.Text = "System.Data.SqlClient.SqlConnection";
             this.btnSystemDataSqlClientSqlConnection.UseVisualStyleBackColor = true;
             this.btnSystemDataSqlClientSqlConnection.Click += new System.EventHandler(this.btnSystemDataSqlClientSqlConnection_Click);
+            // 
+            // btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem
+            // 
+            this.btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem.Location = new System.Drawing.Point(12, 41);
+            this.btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem.Name = "btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem";
+            this.btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem.Size = new System.Drawing.Size(333, 23);
+            this.btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem.TabIndex = 1;
+            this.btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem.Text = "Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItem";
+            this.btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem.UseVisualStyleBackColor = true;
+            this.btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem.Click += new System.EventHandler(this.btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 277);
+            this.Controls.Add(this.btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem);
             this.Controls.Add(this.btnSystemDataSqlClientSqlConnection);
             this.Name = "frmMain";
             this.Text = "Form1";
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnSystemDataSqlClientSqlConnection;
+        private System.Windows.Forms.Button btnMicrosoftTeamFoundationWorkItemTrackingClientWorkItem;
     }
 }
 

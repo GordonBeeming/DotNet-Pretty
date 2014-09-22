@@ -93,7 +93,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy *.* "%25USERPROFILE%25\Documents\Visual Studio 2013\Visualizers" /Y</PostBuildEvent>
+    <PostBuildEvent>xcopy *.* "$([System.Environment]::GetFolderPath(SpecialFolder.MyDocuments))\Visual Studio 2013\Visualizers" /Y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

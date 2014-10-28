@@ -1,2 +1,2 @@
-﻿[System.Windows.Forms.MessageBox]::Show($pwd)
+﻿Write-Host $pwd
 [System.Diagnostics.Process]::Start("http://bing.com/")

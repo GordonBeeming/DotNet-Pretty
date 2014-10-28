@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30626.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPretty", "DotNetPretty\DotNetPretty.csproj", "{9808D792-7131-48D4-A4A6-0EC3C2D115F7}"
 EndProject
@@ -13,6 +13,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPretty.DesktopTestApp", "DotNetPretty.DesktopTestApp\DotNetPretty.DesktopTestApp.csproj", "{71EEF3DA-6A12-414A-9CF0-682E6FCAD1D5}"
 EndProject
 Global
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = 85c4656f-07de-4553-b3c1-2cf95af9f498
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

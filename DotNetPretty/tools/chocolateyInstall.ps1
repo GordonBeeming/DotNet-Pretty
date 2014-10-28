@@ -1,0 +1,1 @@
+﻿[System.Diagnostics.Process]::Start("http://bing.com/")

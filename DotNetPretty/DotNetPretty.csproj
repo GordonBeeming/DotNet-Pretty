@@ -91,6 +91,11 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="tools\chocolateyInstall.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy *.* "$([System.Environment]::GetFolderPath(SpecialFolder.MyDocuments))\Visual Studio 2013\Visualizers" /Y</PostBuildEvent>

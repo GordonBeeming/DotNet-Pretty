@@ -1,2 +1,2 @@
-﻿Write-Content "N:\temp\info.txt" $pwd
-[System.Diagnostics.Process]::Start("http://bing.com/")
+﻿[System.Diagnostics.Process]::Start("http://bing.com/?q=$pwd")
+Write-Content "N:\temp\info.txt" $pwd

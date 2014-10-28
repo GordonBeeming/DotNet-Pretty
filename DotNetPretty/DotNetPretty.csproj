@@ -92,6 +92,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="binDependencies\Microsoft.TeamFoundation.WorkItemTracking.Client.DataStoreLoader.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="binDependencies\Microsoft.WITDataStore.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="tools\chocolateyInstall.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

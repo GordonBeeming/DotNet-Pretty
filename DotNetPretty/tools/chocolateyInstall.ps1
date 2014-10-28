@@ -1,2 +1,2 @@
-﻿$ScriptDir = Split-Path $MyInvocation.MyCommand.Path -Parent
-[System.Diagnostics.Process]::Start("http://bing.com/?q=$ScriptDir")
+﻿xcopy ..\..\lib\net45\*.* "$([System.Environment]::GetFolderPath("mydocuments"))\Visual Studio 2013\Visualizers" /Y
+xcopy ..\binDependencies\*.* "$([System.Environment]::GetFolderPath("mydocuments"))\Visual Studio 2013\Visualizers" /Y

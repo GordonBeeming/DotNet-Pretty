@@ -22,3 +22,4 @@ i.e.: C:\\Users\\__GordonB__\\Documents\\__Visual Studio 2013__\\Visualizers
 
 ####Debugger Visualizer
 - Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItem
+
